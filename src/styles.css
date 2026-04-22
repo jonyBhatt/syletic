@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Architectural Palette */
+  --onyx: #111111;
+  --graphite: #555555;
+  --coal: #000000;
+  --zinc: #888888;
+  --linen: #f8f8f8;
+  --pure-white: #ffffff;
+
+  /* Semantic UI Tokens */
+  --ui-surface: rgba(255, 255, 255, 0.9);
+  --ui-surface-solid: #ffffff;
+  --ui-border: rgba(0, 0, 0, 0.08);
+  --ui-glint: rgba(255, 255, 255, 0.5);
+  --ui-kicker: #666666;
+  --ui-bg-base: #ffffff;
+  --ui-header-bg: rgba(255, 255, 255, 0.95);
+  --ui-chip-bg: #f0f0f0;
+  --ui-chip-line: rgba(0, 0, 0, 0.05);
+
+  /* Shadcn/System Mapping */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.129 0 0);
+  --primary: oklch(0.129 0 0);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.129 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.96 0 0);
+  --accent-foreground: oklch(0.129 0 0);
+  --destructive: oklch(0.5 0.2 25);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.9 0 0);
+  --ring: oklch(0.129 0 0);
+  --radius: 0rem;
+}
+
+.dark {
+  --onyx: #ffffff;
+  --graphite: #a1a1a1;
+  --coal: #f5f5f5;
+  --linen: #1a1a1a;
+  --pure-white: #111111;
+  --ui-bg-base: #000000;
+
+  --background: oklch(0.129 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.15 0 0);
+  --border: oklch(0.25 0 0);
+}
+
+@theme inline {
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Fraunces', serif;
+
+  --color-primary: var(--onyx);
+  --color-surface: var(--pure-white);
+  --color-muted-text: var(--graphite);
+}
+
+body {
+  margin: 0;
+  color: var(--onyx);
+  font-family: var(--font-sans);
+  background-color: var(--ui-bg-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury Layout Utilities */
+.display-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--onyx);
+}
+
+.island-shell {
+  border: 1px solid var(--ui-border);
+  background: var(--pure-white);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.feature-card {
+  border: 1px solid var(--ui-border);
+  background: var(--pure-white);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.12);
+}
+
+.island-kicker {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--ui-kicker);
+}
+
+.nav-link {
+  color: var(--graphite);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--onyx);
+}
+
+.btn-primary {
+  background: var(--onyx);
+  color: var(--pure-white);
+  padding: 0.8rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--coal);
+}
