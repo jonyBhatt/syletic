@@ -85,7 +85,6 @@ body {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  color: var(--onyx);
 }
 
 .island-shell {
@@ -114,17 +113,6 @@ body {
   font-weight: 600;
   font-size: 0.7rem;
   color: var(--ui-kicker);
-}
-
-.nav-link {
-  color: var(--graphite);
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.nav-link:hover {
-  color: var(--onyx);
-  font-weight: 500;
 }
 
 .btn-primary {
