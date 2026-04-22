@@ -63,14 +63,11 @@ export const Hero = () => {
                   className="nav-link group relative py-1"
                 >
                   {item}
-                  <span className="absolute left-0 bottom-0 w-0 h-[1.5px] bg-onyx transition-all duration-300 group-hover:w-full" />
                 </a>
               </li>
             ))}
           </ul>
-          <button className="px-6 py-2 border border-ui-border rounded-full text-sm font-medium hover:bg-onyx hover:text-white transition-all duration-300">
-            Sign up
-          </button>
+          <button className="btn-cta">Sign up</button>
         </nav>
 
         {/* Hero Copy */}
@@ -80,7 +77,7 @@ export const Hero = () => {
             in the San Francisco <br />
             Bay Area
           </h1>
-          <button className="btn-primary mb-16 px-10 py-4 text-base">
+          <button className="btn-primary mb-16 px-10 py-4 text-base cursor-pointer">
             Get Started
           </button>
         </div>
