@@ -1,3 +1,4 @@
+import { DreamHome } from '#/components/DreamHome'
 import ExpertiseSection from '#/components/ExpertiesSection'
 import { Hero } from '#/components/Hero'
 import { createFileRoute } from '@tanstack/react-router'
@@ -9,6 +10,7 @@ function Home() {
     <div>
       <Hero />
       <ExpertiseSection />
+      <DreamHome />
     </div>
   )
 }
