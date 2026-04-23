@@ -83,7 +83,7 @@ export const Footer = () => {
           {/* Bottom Row: Copyright and Legal */}
           <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground font-sans gap-4 sm:gap-0">
             {/* Left side: Copyright */}
-            <span>Copyright HOFIN © 2024</span>
+            <span>Copyright HJITBJONY © 2026</span>
 
             {/* Right side: Legal links (uses muted text color) */}
             <div className="flex items-center gap-6">
