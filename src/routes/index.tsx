@@ -1,3 +1,4 @@
+import ExpertiseSection from '#/components/ExpertiesSection'
 import { Hero } from '#/components/Hero'
 import { createFileRoute } from '@tanstack/react-router'
 
@@ -7,6 +8,7 @@ function Home() {
   return (
     <div>
       <Hero />
+      <ExpertiseSection />
     </div>
   )
 }
