@@ -38,7 +38,7 @@ export const Hero = () => {
             <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm rotate-45" />
             </div>
-            <span className="text-xl font-bold tracking-tight">Danielle</span>
+            <span className="text-xl font-bold tracking-tight">Syletic</span>
           </div>
 
           <img
