@@ -28,7 +28,7 @@ export const Hero = () => {
   const [activeImage, setActiveImage] = useState(properties[0])
 
   return (
-    <section className="relative flex flex-col lg:flex-row min-h-screen bg-pure-white overflow-hidden">
+    <section className="relative flex flex-col lg:flex-row min-h-screen bg-background overflow-hidden">
       {/* BACKGROUND/LEFT IMAGE SECTION */}
       {/* On md: takes full screen absolute positioning. On lg: returns to half-width relative. */}
       <div className="absolute inset-0 z-0 md:block lg:relative lg:w-1/2 lg:h-screen p-4 lg:p-6">
@@ -55,7 +55,7 @@ export const Hero = () => {
 
       {/* RIGHT/OVERLAY CONTENT SECTION */}
       {/* On md: centers content over the image. On lg: settles into the right column. */}
-      <div className="relative z-10 w-full lg:w-1/2 flex flex-col px-6 md:px-12 lg:px-16 py-8 lg:py-12 min-h-screen md:text-onyxjustify-center md:items-center lg:items-start">
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col px-6 md:px-12 lg:px-16 py-8 lg:py-12 min-h-screen md:text-foregroundjustify-center md:items-center lg:items-start">
         {/* Navigation - Fixed or Relative at top */}
         <nav className="absolute top-8 left-0 right-0 px-8  items-center justify-between lg:relative lg:top-0 lg:px-0 mb-0 lg:mb-24  w-full hidden sm:flex">
           <ul className="flex gap-6 md:gap-8   lg:bg-transparent lg:backdrop-blur-none px-4 py-2 rounded-full">

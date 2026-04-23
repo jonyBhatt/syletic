@@ -28,7 +28,7 @@ export const DreamHome = () => {
     )
 
   return (
-    <section className="w-full  mx-auto py-20 px-16 bg-pure-white">
+    <section className="w-full  mx-auto py-20 px-16 bg-background">
       <h2 className="display-title text-4xl mb-12 tracking-tight">
         FIND YOUR DREAM HOME
       </h2>
@@ -48,7 +48,7 @@ export const DreamHome = () => {
           placeholder="Choose your type"
         />
         <div className="flex-1 w-full space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-wider text-onyx">
+          <p className="text-sm font-semibold uppercase tracking-wider text-foreground">
             Price
           </p>
           <Select>
@@ -135,7 +135,7 @@ export const DreamHome = () => {
 /* Sub-components for cleaner structure */
 const FilterItem = ({ label, icon, options, placeholder }: any) => (
   <div className="flex-1 w-full space-y-4">
-    <p className="text-sm font-semibold uppercase tracking-wider text-onyx">
+    <p className="text-sm font-semibold uppercase tracking-wider text-foreground">
       {label}
     </p>
     <Select>

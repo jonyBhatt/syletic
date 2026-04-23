@@ -69,7 +69,7 @@ export const TeamSection: React.FC = () => {
   return (
     <section className="py-24 px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="mb-12 font-bold tracking-tight text-[clamp(1.5rem,4vw,2.5rem)] text-onyx">
+        <h2 className="mb-12 font-bold tracking-tight text-[clamp(1.5rem,4vw,2.5rem)] text-foreground">
           Meet the People Behind Dwellis
         </h2>
 

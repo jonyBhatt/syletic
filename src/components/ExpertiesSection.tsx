@@ -30,7 +30,7 @@ const galleryImages: GalleryImage[] = [
 
 const ExpertiseSection: React.FC = () => {
   return (
-    <section className="py-24 px-6 lg:px-16 bg-pure-white overflow-hidden">
+    <section className="py-24 px-6 lg:px-16 bg-background overflow-hidden">
       <div className="max-w-dvw mx-auto grid grid-cols-1 lg:grid-cols-12 gap-24 items-center justify-between">
         {/* Left: Content Column */}
         <div className="lg:col-span-5 space-y-8 rise-in">

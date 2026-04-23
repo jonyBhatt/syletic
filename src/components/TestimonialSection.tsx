@@ -74,9 +74,9 @@ export const TestimonialSection: React.FC = () => {
   }
 
   return (
-    <section className="py-20 bg-pure-white overflow-hidden flex flex-col items-center">
+    <section className="py-20 bg-background overflow-hidden flex flex-col items-center">
       {/* Dynamic Heading with Clamp */}
-      <h2 className="text-center font-bold text-onyx mb-6 px-6 leading-tight text-[clamp(1.5rem,5vw,2.8rem)] font-serif">
+      <h2 className="text-center font-bold text-foreground mb-6 px-6 leading-tight text-[clamp(1.5rem,5vw,2.8rem)] font-serif">
         Hear what our <br /> customers have to say
       </h2>
 
@@ -100,7 +100,7 @@ export const TestimonialSection: React.FC = () => {
                 transition={{ type: 'spring', stiffness: 260, damping: 25 }}
                 className="absolute w-[90%] md:w-125 bg-gray-100 rounded-[2.5rem] p-8 md:p-12  border border-gray-500/30 shadow-2xl "
               >
-                {/* <Quote className="text-onyx/5 absolute top-8 left-8 w-16 h-16" /> */}
+                {/* <Quote className="text-foreground/5 absolute top-8 left-8 w-16 h-16" /> */}
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex gap-1 text-yellow-400 mb-6">
@@ -120,7 +120,7 @@ export const TestimonialSection: React.FC = () => {
                       className="w-12 h-12 rounded-full object-cover"
                     />
                     <div>
-                      <h4 className="font-bold text-onyx text-sm uppercase tracking-widest">
+                      <h4 className="font-bold text-foreground text-sm uppercase tracking-widest">
                         {item.author}
                       </h4>
                       <p className="text-xs text-zinc">{item.role}</p>
@@ -137,13 +137,13 @@ export const TestimonialSection: React.FC = () => {
       <div className="flex gap-6 mt-4">
         <button
           onClick={prev}
-          className="p-4 rounded-full cursor-pointer border border-[#a1a1a1] hover:bg-onyx  transition-all group active:scale-90"
+          className="p-4 rounded-full cursor-pointer border border-ring hover:bg-accent  transition-all group active:scale-90"
         >
           <ChevronLeft className="group-hover:-translate-x-1 transition-transform" />
         </button>
         <button
           onClick={next}
-          className="p-4 rounded-full bg-onyx cursor-pointer hover:bg-coal transition-all group active:scale-90 border border-ui-border"
+          className="p-4 rounded-full bg-onyx cursor-pointer  transition-all group active:scale-90 border border-ring hover:bg-accent"
         >
           <ChevronRight className="group-hover:translate-x-1 transition-transform" />
         </button>
